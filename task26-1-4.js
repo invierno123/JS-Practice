@@ -1,7 +1,7 @@
 let squareList = [];
 let widthList = [5, 6, 5, 6, 5, 6, 5, 6, 5, 6, 5, 6];
 function createSquare(width) {
-  let obj = Object.create(creatSquare.squarePrototype);
+  let obj = Object.create(creatSquare.squarePrototype); //这行代码在调用createSquare时才会执行
   obj.width = width;
   return obj;
 }
